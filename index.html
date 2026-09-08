@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>视频自动剪视频系统</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand"><span class="brand-mark">V</span><span>智剪工厂</span></div>
+        <div class="workspace-switcher"><span class="avatar">DG</span><div><strong>东莞 · 总控中心</strong><small>双工厂协同中</small></div><span class="chevron">⌄</span></div>
+        <nav id="sidebar-nav" aria-label="主导航"></nav>
+        <div class="sidebar-bottom">
+          <button class="settings-button" id="open-settings">⚙ <span>系统设置</span></button>
+          <div class="help-card"><span class="help-icon">?</span><div><strong>新手引导</strong><small>从定位到复盘，6步跑通</small></div><button id="start-guide">开始</button></div>
+          <div class="user"><span class="avatar dark">林</span><div><strong>林小玲</strong><small>运营负责人</small></div><span>⋮</span></div>
+        </div>
+      </aside>
+      <main class="main-content">
+        <header class="topbar"><div class="crumb"><span id="page-eyebrow">运营工作台</span><h1 id="page-title">主控台</h1></div><div class="topbar-actions"><button class="icon-button">⌕</button><button class="notification">♧<i></i></button><button class="today-btn" id="today-btn">2026年 9月8日</button></div></header>
+        <section id="page-content"></section>
+      </main>
+    </div>
+    <div class="modal-backdrop hidden" id="modal-backdrop"><div class="modal" id="modal"></div></div>
+    <div class="toast hidden" id="toast"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
